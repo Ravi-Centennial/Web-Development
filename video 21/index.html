@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascading</title>
+    <style>
+        h1{
+            color: green;
+            background-color: yellow;
+        }
+        .yellow{
+            color: red;
+            background-color: pink;
+        }
+        
+        .brown {
+            color: brown;
+            background-color: magenta;
+        }
+        .yellow{
+            color: yellow;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red yellow brown">
+        This is my Heading tag.
+    </h1>
+</body>
+</html>

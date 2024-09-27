@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color: brown;
+        } */
+         /* .boxes *{
+            color: blue;
+            border: 2px solid green;
+            margin: 2px;
+            padding: 10px;
+         }
+         [data-color="primary"]{
+            margin-top: 45px;
+         } */
+          .boxes::after{
+            content: "Harry is Good teacher";
+            color: green;
+          }
+
+          ::selection{
+            background-color: aqua;
+            color: pink;
+          }
+          .box::first-letter{
+            color: peru;
+            font-size: 20px;
+          }
+          input::placeholder{
+            color: rgb(92, 92, 96);
+            /* font-size: 25px; */
+          }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box with first child</div>
+        <div class="box">Hey I am box</div>
+        <div class="box">Hey I am box</div>
+        <input type="text" placeholder="Enter your text">
+    </div>
+</body>
+</html>

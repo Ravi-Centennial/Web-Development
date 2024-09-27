@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="descriotion" content="This is a page which contains description fabout harry - the sigma">
+    <title>Forms - let's learn it</title>
+</head>
+
+<body>
+    <form action="/submit.php" method="POST">
+        <h1>Form to apply for sigma web development course</h1>
+        <div> <label for="username">Enter your Username: </label>
+            <input type="text" id="username" name="username" placeholder="Enter your Usename" required autofocus>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Comment</label>
+            <textarea name="comment" rows="4" cols="50">Enter your comment here...
+          </textarea>
+        </div>
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+            <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

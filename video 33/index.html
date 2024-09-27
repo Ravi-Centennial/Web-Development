@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Website</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @media screen and (max-width: 455px) {
+            ul {
+                flex-direction: column;
+            }
+
+        }
+
+        body{
+            background-color: var(--bodycolor);
+        }
+
+        :root {
+            --color: rgb(190, 249, 243);
+            --baccolor: rgb(214, 247, 251);
+            --fontcolor: rgb(103, 103, 134);
+            --bodycolor: rgb(244, 238, 239);
+        }
+
+        .nav {
+            border: 2px solid var(--color);
+            border-radius: 7px;
+            background-color: var(--baccolor);
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            margin: 0 auto;
+            padding: 0px;
+            font-weight: normal;
+        }
+
+        ul li {
+            font-size: 20px;
+            padding: 0px 40px 0px 0px;
+            margin-right: 40px;
+            list-style: none;
+        }
+
+        .logo {
+            margin: 5px 20px 5px 5px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--fontcolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <span class="logo">
+            <a href="/"><img src="logo.png" alt="logo" width="30px" height="30px"></a>
+        </span>
+        <ul>
+            <li class="Home"><a href="/">Home</a></li>
+            <li class="Services"><a href="/">Services</a></li>
+            <li class="Product"><a href="/">Product</a></li>
+            <li class="Contact"><a href="/">Contact</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

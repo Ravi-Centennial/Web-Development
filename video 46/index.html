@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation</title>
+    <style>
+        .container {
+            width: 30vw;
+            height: 80vh;
+            background-color: aqua;
+        }
+
+        .box {
+            height: 45px;
+            width: 34px;
+            animation: harryka 3s ease-in-out 0.5s infinite;
+        }
+
+        @keyframes harryka {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: rgb(23, 15, 90);
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Design card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Moderustic:wght@300..800&display=swap');
+
+        * {
+            font-family: "Moderustic", sans-serif;
+        }
+
+        .card {
+            border: 2PX solid rgb(174, 174, 174);
+            border-radius: 10px;
+            height: 370px;
+            width: 230px;
+            position: relative;
+            left: 35vw;
+        }
+
+        img {
+            width: 220px;
+            margin: 4px;
+            border-radius: 10px;
+            position: relative;
+            left: 1px;
+            
+        }
+
+        .box {
+            position: absolute;
+            top: 160px;
+        }
+
+        .nature {
+            border: 1px solid #b3f4fc3a;
+            border-radius: 15px;
+            padding: 5px;
+            font-size: 12px;
+            margin: 5px;
+            color: rgb(78, 136, 187);
+            margin-left: 15px;
+            background-color: #8deefb1e;
+        }
+
+        .lake {
+            background-color: rgb(78, 136, 187);
+            border: 1px solid #b3f4fc3a;
+            border-radius: 15px;
+            padding: 5px;
+            font-size: 12px;
+            margin: 5px;
+            color: rgb(78, 136, 187);
+            background-color: #b2eff740;
+
+        }
+
+        h1 {
+            font-size: 20px;
+            color: rgb(77, 75, 75);
+            padding-left: 10px;
+            margin-bottom: -1px;
+        }
+
+        p {
+            line-height: 19px;
+            font-size: 13px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .last {
+            border-radius: 15px;
+            border: 1px solid #b3f4fc3a;
+            text-align: center;
+            font-size: 15px;
+            position: absolute;
+            padding: 5px;
+            left: 4.5em;
+            background-color: #b3f4fc3a;
+            bottom: -26px;
+            color: rgb(78, 136, 187);
+            font-family: "Bona Nova SC", serif;
+            letter-spacing: -0.5px;
+            cursor: pointer;
+        }
+
+        /* .last:hover{
+            color: green;
+            background-color: yellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="nature.jpg" alt="Nature">
+        <div class="box">
+            <span class="nature">Nature</span>
+            <span class="lake">Lake</span>
+            <h1>The Best Mountain</h1>
+            <p class="text">Nature is a source of beauty and inspiration, filled with diverse landscapes, vibrant
+                wildlife, and tranquil moments. It nurtures life, providing balance and harmony.
+            </p>
+            <div class="last">Read More</div>
+        </div>
+    </div>
+</body>
+
+</html>
