@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers Terminal</title>
+    <style>
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .terminal {
+            background: linear-gradient(to right, #002b36, black);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .blinking-dots span {
+            animation: blink 1.5s steps(1) infinite;
+        }
+
+        .blinking-dots span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .blinking-dots span:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .blinking-dots span:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="terminal">
+        <pre id="output"></pre>
+    </div>
+    <script>
+        const messages = [
+            "Initializing Hacking",
+            "Reading your Files",
+            "Password files Detected",
+            "Sending all Passwords and Personal files to server",
+            "Cleaning up"
+        ];
+
+        let index = 0;
+
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function showMessage() {
+            if (index < messages.length) {
+                const output = document.getElementById('output');
+                const message = messages[index];
+                output.innerHTML += `<div>${message}<span class="blinking-dots"><span>.</span><span>.</span><span>.</span></span></div>`;
+                index++;
+                await delay(Math.random() * 6000 + 1000);
+                showMessage();
+            }
+        }
+
+        showMessage();
+    </script>
+</body>
+
+</html>
