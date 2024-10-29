@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style = "display: flex;" data-createdby = "harry" data-scriptedby = "larry">Hey I am box</div>
+        <div class="box">Hey I am box</div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        let cont = document.querySelector(".container");
+        let div = document.createElement("div");
+        div.innerHTML = "I have been created <b>by harry</b>";
+        // div.setAttribute("class", "created");
+        // document.querySelector(".container").before(div);
+        div.setAttribute("class", "minor");
+        cont.insertAdjacentElement("beforeend",div);
+    </script>
+</body>
+</html>
